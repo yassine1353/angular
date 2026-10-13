@@ -1,0 +1,18 @@
+<section class="page">
+  <h2>Liste des conférences</h2>
+
+  <div class="cards">
+    @for (c of conferences; track c.id) {
+      <article class="card">
+        <h3>{{ c.title }}</h3>
+        <p class="meta">{{ c.speaker }} · {{ c.date }} · {{ c.location }}</p>
+        <div class="actions">
+          <a [routerLink]="['/conferences', c.id]">Détails</a>
+          <a [routerLink]="['/conferences', c.id, 'registration']">S'inscrire</a>
+        </div>
+      </article>
+    } @empty {
+      <p>Aucune conférence disponible.</p>
+    }
+  </div>
+</section>

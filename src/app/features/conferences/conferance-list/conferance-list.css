@@ -1,0 +1,26 @@
+.page {
+  padding: 24px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.card {
+  border: 1px solid #d5dae5;
+  border-radius: 8px;
+  padding: 16px;
+}
+.meta {
+  color: #5b6478;
+  font-size: 0.9rem;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+}
+.actions a {
+  color: #dd0031;
+  text-decoration: none;
+  font-weight: 600;
+}
